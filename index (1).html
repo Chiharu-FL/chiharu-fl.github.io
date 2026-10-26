@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>佐藤千春 | フルート奏者・BodyMuse</title>
+<meta name="description" content="フルート奏者・講師・整体師 佐藤千春のオフィシャルサイト。プロフィール、演奏・指導実績、コンサートと施術のご予約。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Noto+Serif+JP:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f7f5f1;
+    --paper: #ffffff;
+    --ink: #24283b;
+    --navy: #1f2a48;
+    --soft: #6f7385;
+    --silver: #b9bcc6;
+    --gold: #b08d57;
+    --line: #e4e1da;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Noto Serif JP", serif;
+    font-weight: 300;
+    line-height: 1.95;
+    letter-spacing: 0.04em;
+    padding-bottom: 84px;
+  }
+  a { color: inherit; }
+  .wrap { max-width: 680px; margin: 0 auto; padding: 0 20px; }
+
+  /* nav */
+  nav {
+    position: sticky; top: 0; z-index: 10;
+    background: rgba(247,245,241,0.94);
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid var(--line);
+  }
+  nav ul {
+    list-style: none; display: flex; gap: 18px;
+    overflow-x: auto; white-space: nowrap;
+    max-width: 680px; margin: 0 auto; padding: 12px 20px;
+    font-size: 0.82rem;
+  }
+  nav a { text-decoration: none; color: var(--soft); }
+  nav a:hover { color: var(--navy); }
+
+  /* hero */
+  .hero {
+    background: var(--navy);
+    color: #fff;
+    text-align: center;
+    padding: 72px 20px 64px;
+  }
+  .hero .en {
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(2.6rem, 10vw, 4rem);
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    line-height: 1.2;
+  }
+  .hero .ja { margin-top: 6px; letter-spacing: 0.5em; color: var(--silver); font-size: 0.95rem; }
+  .breath { display: block; margin: 28px auto; width: 160px; height: 20px; }
+  .breath path { stroke: var(--gold); stroke-width: 1; fill: none; stroke-dasharray: 300; stroke-dashoffset: 300; animation: draw 3s ease forwards; }
+  @keyframes draw { to { stroke-dashoffset: 0; } }
+  .hero .roles { font-size: 0.92rem; line-height: 2.1; }
+  .hero .catch {
+    margin-top: 28px;
+    font-size: 1.05rem;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+  }
+
+  /* sections */
+  section { padding: 64px 0; border-bottom: 1px solid var(--line); }
+  h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400; font-size: 2rem; letter-spacing: 0.1em;
+    color: var(--navy); line-height: 1.2;
+  }
+  h2 + .sub { font-size: 0.85rem; color: var(--gold); letter-spacing: 0.3em; margin-bottom: 32px; }
+  h3 {
+    font-size: 1rem; font-weight: 500; color: var(--navy);
+    margin: 36px 0 12px; padding-left: 12px;
+    border-left: 2px solid var(--gold);
+  }
+  p + p { margin-top: 1em; }
+
+  /* message */
+  .message p { font-size: 1rem; }
+  .message .lead {
+    font-size: 1.15rem; font-weight: 400; color: var(--navy);
+    line-height: 2; margin-bottom: 24px;
+  }
+
+  /* profile */
+  .titles { font-size: 0.85rem; color: var(--soft); margin-bottom: 20px; }
+
+  /* timeline */
+  .timeline { list-style: none; }
+  .timeline li {
+    display: grid; grid-template-columns: 64px 1fr; gap: 12px;
+    padding: 12px 0; border-bottom: 1px dashed var(--line);
+  }
+  .timeline .y { font-family: "Cormorant Garamond", serif; font-size: 1.1rem; color: var(--gold); }
+  .timeline small { display: block; color: var(--soft); font-size: 0.8rem; }
+  .timeline .next .y { color: var(--navy); }
+
+  .tags { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; }
+  .tags li {
+    border: 1px solid var(--silver); border-radius: 999px;
+    padding: 2px 14px; font-size: 0.85rem; background: var(--paper);
+  }
+
+  /* services */
+  .card {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 28px 22px;
+    margin-bottom: 24px;
+  }
+  .card .label { font-size: 0.75rem; letter-spacing: 0.25em; color: var(--gold); }
+  .card h4 { font-size: 1.2rem; font-weight: 500; color: var(--navy); margin: 4px 0 14px; line-height: 1.6; }
+  .card dl { display: grid; grid-template-columns: 4.5em 1fr; gap: 4px 12px; font-size: 0.9rem; margin: 16px 0; }
+  .card dt { color: var(--soft); }
+  .card .players { font-size: 0.88rem; }
+  .btn {
+    display: block; text-align: center; text-decoration: none;
+    background: var(--navy); color: #fff;
+    padding: 14px; border-radius: 4px; margin-top: 20px;
+    letter-spacing: 0.15em; font-size: 0.95rem;
+  }
+  .btn:hover { opacity: 0.88; }
+  .note { font-size: 0.78rem; color: var(--soft); margin-top: 10px; }
+
+  /* contact */
+  .contact { text-align: center; }
+  .contact .mail { font-size: 1.05rem; margin: 12px 0; display: inline-block; }
+
+  footer { text-align: center; font-size: 0.75rem; color: var(--soft); padding: 32px 20px; }
+
+  /* sticky reserve */
+  .float {
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 20;
+    background: var(--paper); border-top: 1px solid var(--line);
+    padding: 12px 20px;
+  }
+  .float a {
+    display: block; max-width: 640px; margin: 0 auto;
+    text-align: center; text-decoration: none;
+    background: var(--gold); color: #fff;
+    padding: 12px; border-radius: 4px; letter-spacing: 0.2em;
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <h1 class="en">Chiharu Sato</h1>
+  <p class="ja">佐藤 千春</p>
+  <svg class="breath" viewBox="0 0 160 20" aria-hidden="true"><path d="M0 10 Q 20 0 40 10 T 80 10 T 120 10 T 160 10"/></svg>
+  <p class="roles">フルート奏者・フルート講師<br>コンサートプロデューサー<br>整体師／BodyMuse オーナー</p>
+  <p class="catch">楽器を調律するように、<br>人の身体も整える。</p>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#message">想い</a></li>
+    <li><a href="#profile">プロフィール</a></li>
+    <li><a href="#works">実績</a></li>
+    <li><a href="#service">サービス・ご予約</a></li>
+    <li><a href="#contact">お問い合わせ</a></li>
+  </ul>
+</nav>
+
+<main>
+
+<section id="message">
+  <div class="wrap message">
+    <h2>Message</h2>
+    <p class="sub">想い</p>
+    <p class="lead">呼吸が深くなると、<br>音も、表情も変わります。</p>
+    <p>フルートは、息そのものが音になる楽器です。だからこそ、奏でる人の身体や心の状態が、そのまま音色にあらわれます。</p>
+    <p>演奏家として、そして整体師として、私は「音」と「身体」を別々のものだと思っていません。繊細な楽器を調律するように、一人ひとりの身体をやさしく整えること。そして、整った身体から生まれる音楽を、たくさんの方に届けること。</p>
+    <p>コンサートでも、レッスンでも、施術でも。ここで過ごした時間のあと、少しだけ呼吸が深く、帰り道の足取りが軽くなっていたら、それが私のいちばんの喜びです。</p>
+  </div>
+</section>
+
+<section id="profile">
+  <div class="wrap">
+    <h2>Profile</h2>
+    <p class="sub">プロフィール</p>
+    <p class="titles">佐藤 千春　フルート奏者／整体師／AI活用コンサルタント</p>
+
+    <p>岐阜県中津川市出身。名古屋芸術大学卒業。第16回日本フルートコンベンションコンクールなど、多数のコンクールで入賞・入選。</p>
+    <p>卒業後より、客船、ディナーショー、式典、保育園、介護施設、学校への訪問演奏や特別講義など、生演奏の届け方を追求している。クラシックから昭和歌謡、J-POP、ゲーム音楽まで、ジャンルを選ばず演奏する。</p>
+    <p>自らコンサートを数多く企画・主催し、特別ゲストを招いたコンサートシリーズや、昭和歌謡限定ライブ（第8回まで継続）を開催。</p>
+    <p>名古屋・栄のフルート教室と整体の複合サロン「BodyMuse」オーナー兼フルート講師・整体師。エステセラピストとして独立後、日本リラクゼーションセラピスト2級・1級を取得。歯科医師の監修による、全身の歪みと顎関節に特化した整体技法を習得し、セラピストスクールの認定講師を2024年まで務める。</p>
+    <p>2026年、音楽家の繊細な身体にも使える、歪み矯正×リラクゼーションの新メソッド「調律整体」を開発。</p>
+    <p>一般社団法人生成AI活用普及協会（GUGA）認定「生成AIパスポート」取得。IT企業での広報・採用マーケティング、AI活用コンサルにも携わっている。</p>
+  </div>
+</section>
+
+<section id="works">
+  <div class="wrap">
+    <h2>Works</h2>
+    <p class="sub">実績</p>
+
+    <h3>コンサート企画・主催</h3>
+    <ol class="timeline">
+      <li class="next"><span class="y">2026</span><p>名古屋聖マルコ教会コンサート<small>12月11日・12日　開催予定</small></p></li>
+      <li><span class="y">2026</span><p>身体と呼吸の新発見公開講座<small>9月</small></p></li>
+      <li><span class="y">2026</span><p>Prime 巨匠の特等席<small>7月</small></p></li>
+      <li><span class="y">2026</span><p>百音繚乱<small>5月</small></p></li>
+      <li><span class="y">2026</span><p>祭・稀有なる響演<small>2月</small></p></li>
+      <li><span class="y">継続</span><p>昭和歌謡限定ライブ<small>第8回まで開催</small></p></li>
+      <li><span class="y">継続</span><p>特別ゲストを招いたコンサートシリーズ</p></li>
+    </ol>
+
+    <h3>演奏</h3>
+    <p>これまでの演奏先</p>
+    <ul class="tags" style="margin-top:10px">
+      <li>客船</li><li>ディナーショー</li><li>式典</li><li>表彰式</li>
+      <li>保育園</li><li>介護施設</li><li>学校</li>
+    </ul>
+    <p style="margin-top:16px">クラシック／昭和歌謡／J-POP／ゲーム音楽</p>
+
+    <h3>指導</h3>
+    <p>BodyMuseにてフルートレッスンを担当。生徒が主役となる音楽会や、施設への訪問コンサートを定期的に開催しています。</p>
+    <p>演奏で起こりやすい疲れや緊張に、整体師の視点から向き合う「心地よく、効率的に上達する」レッスンを大切にしています。</p>
+  </div>
+</section>
+
+<section id="service">
+  <div class="wrap">
+    <h2>Service</h2>
+    <p class="sub">サービス・ご予約</p>
+
+    <div class="card">
+      <p class="label">CONCERT</p>
+      <h4>名古屋聖マルコ教会<br>コンサート</h4>
+      <dl>
+        <dt>日時</dt><dd>2026年12月11日（金）19:00〜<br>2026年12月12日（土）10:30〜<br>各回約60分</dd>
+        <dt>会場</dt><dd>名古屋聖マルコ教会</dd>
+        <dt>料金</dt><dd>1日券　一般 4,000円／学生 2,500円<br>2日通し　一般 7,000円／学生 4,000円</dd>
+        <dt>定員</dt><dd>各回60名</dd>
+      </dl>
+      <p class="players">佐藤千春（フルート）<br>三浦章宏（ヴァイオリン）<br>ルドヴィート・カンタ（チェロ）<br>鬼頭久美子（ピアノ）</p>
+      <a class="btn" href="mailto:contact@chiharusato.com?subject=%E8%81%96%E3%83%9E%E3%83%AB%E3%82%B3%E6%95%99%E4%BC%9A%E3%82%B3%E3%83%B3%E3%82%B5%E3%83%BC%E3%83%88%E7%94%B3%E8%BE%BC" id="link-concert">チケットを申し込む</a>
+    </div>
+
+    <div class="card">
+      <p class="label">BODY CARE</p>
+      <h4>調律整体</h4>
+      <p>音楽家として、人・身体・音を整えることを大切にした、千春オリジナルの整体メソッドです。楽器を調律するように、足先から頭、顔まで、やさしい手技と香りで整えていきます。演奏家の方はもちろん、デスクワークや緊張が続きやすい方にもおすすめです。</p>
+      <dl>
+        <dt>場所</dt><dd>BodyMuse（名古屋・栄）</dd>
+      </dl>
+      <a class="btn" href="mailto:contact@chiharusato.com?subject=%E8%AA%BF%E5%BE%8B%E6%95%B4%E4%BD%93%E3%81%AE%E4%BA%88%E7%B4%84" id="link-seitai">調律整体を予約する</a>
+    </div>
+
+    <div class="card">
+      <p class="label">HERBAL STEAM</p>
+      <h4>腰蒸し®</h4>
+      <p>岐阜県・伊吹山で収穫された薬草だけを使った、腰まわりをじんわり温める蒸しメニューです。調律整体やフルートレッスンと組み合わせてご利用いただけます。</p>
+      <dl>
+        <dt>場所</dt><dd>BodyMuse（名古屋・栄）</dd>
+      </dl>
+      <a class="btn" href="mailto:contact@chiharusato.com?subject=%E8%85%B0%E8%92%B8%E3%81%97%E3%81%AE%E4%BA%88%E7%B4%84" id="link-koshimushi">腰蒸し®を予約する</a>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap contact">
+    <h2>Contact</h2>
+    <p class="sub">お問い合わせ</p>
+    <p>演奏・出張演奏のご依頼、レッスン、<br>施術についてのご相談はこちらへ。</p>
+    <a class="mail" href="mailto:contact@chiharusato.com">contact@chiharusato.com</a>
+    <p style="font-size:0.85rem;color:var(--soft)">BodyMuse<br>〒461-0005 愛知県名古屋市東区東桜一丁目6番17号<br>アーバン栄203号室</p>
+  </div>
+</section>
+
+</main>
+
+<footer>© Chiharu Sato / チーム千春運営事務局</footer>
+
+<div class="float"><a href="#service">ご予約・お申し込み</a></div>
+
+</body>
+</html>
